@@ -1,0 +1,156 @@
+/* ---------- ROOT ---------- */
+:root{
+  --bg:#f6fbf6;
+  --forest:#18482f;
+  --accent:#ffd166;
+  --muted:#5b7b68;
+  --card:#ffffff;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(20,60,40,0.06);
+  --container:1100px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(180deg,#f7fbf8,#eef6ee);
+  color:var(--forest);
+}
+
+/* ---------- LAYOUT ---------- */
+.container{width:92%;max-width:var(--container);margin:0 auto}
+
+/* ---------- HEADER ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:linear-gradient(180deg,var(--forest),rgba(20,60,30,0.93));
+  color:#fff;
+  box-shadow:0 4px 20px rgba(0,0,0,0.2);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:56px;height:56px;border-radius:100px;object-fit:cover;background:#fff2;padding:0px}
+.brand-title{margin:0;font-family:'Montserrat',sans-serif}
+.brand-sub{margin:0;font-size:0.82rem;color:var(--accent)}
+
+.nav-list{display:flex;gap:12px;list-style:none;margin:0;padding:0}
+.nav-list a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:10px}
+.nav-list a:hover{background:#ffffff20}
+
+/* ---------- HERO ---------- */
+.hero{
+  height:70vh;display:flex;align-items:center;
+  background:url('BACKGROUND.PNG') center/cover;
+  position:relative;color:#fff;
+}
+.hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.35)}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 320px;gap:24px}
+.hero-text h2{margin:0 0 10px;font-family:'Montserrat',sans-serif;font-size:2rem}
+.hero-text p{max-width:600px;margin:0 0 16px}
+.hero-ctas{display:flex;gap:10px}
+
+.btn{padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn-primary{background:var(--accent);color:var(--forest)}
+.btn-ghost{border:2px solid #fff;color:#fff;background:transparent}
+.btn-small{background:#fff;color:var(--forest);font-weight:800}
+
+.hero-card{
+  background:var(--card);border-radius:12px;padding:14px;
+  box-shadow:var(--shadow);color:var(--forest)
+}
+.hero-card ul{margin:10px 0 14px;padding-left:18px}
+
+/* ---------- PANELS ---------- */
+.panel{padding:40px 0}
+.panel.alt{background:#f6faf6}
+
+/* ---------- TITLES ---------- */
+.section-title{font-family:'Montserrat',sans-serif;margin:0 0 4px}
+.section-sub{margin:0 0 12px;color:var(--muted)}
+
+/* ---------- CARDS (ADVENTURES) ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);border-radius:12px;box-shadow:var(--shadow);overflow:hidden}
+.card .tile{display:block;text-decoration:none;color:inherit}
+.thumb{width:100%;height:160px;object-fit:cover}
+.card h4{margin:10px;font-size:1rem}
+.meta{margin:0 10px 10px;font-size:0.9rem}
+
+/* ---------- NATURE ---------- */
+.gallery{display:flex;gap:14px;flex-wrap:wrap}
+.gallery-item{
+  width:190px;text-decoration:none;color:var(--forest);
+  background:var(--card);border-radius:12px;box-shadow:var(--shadow);
+  overflow:hidden;text-align:center
+}
+.gallery-item img{width:100%;height:140px;object-fit:cover}
+.gallery-item span{display:block;padding:10px;font-weight:700}
+
+/* ---------- FOOD ---------- */
+.food-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.food-card{
+  display:flex;gap:12px;background:var(--card);
+  border-radius:12px;box-shadow:var(--shadow);
+  padding:10px;text-decoration:none;color:var(--forest)
+}
+.food-card img{width:110px;height:90px;border-radius:8px;object-fit:cover}
+
+/* ---------- PLAN ---------- */
+.plan-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.plan-card{background:var(--card);padding:14px;border-radius:12px;box-shadow:var(--shadow)}
+.plan-card ul{padding-left:18px}
+
+/* ---------- CONTACT ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 330px;gap:14px}
+.contact-form{
+  background:var(--card);padding:14px;border-radius:12px;box-shadow:var(--shadow);
+  display:flex;flex-direction:column;gap:10px
+}
+.contact-form input,.contact-form textarea{
+  width:100%;padding:8px;border-radius:8px;border:1px solid #e6efe7
+}
+
+/* ---------- MAP ---------- */
+.map-box{
+  width:100%;
+  margin-top:12px;
+  box-shadow:var(--shadow);
+  border-radius:12px;
+  overflow:hidden;
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer{text-align:center;padding:18px 0;color:var(--muted)}
+
+/* ---------- BACK TO TOP ---------- */
+.back-to-top{
+  position:fixed;right:20px;bottom:20px;
+  width:44px;height:44px;background:var(--forest);
+  color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  text-decoration:none;font-size:1.3rem;box-shadow:0 6px 20px rgba(0,0,0,0.25)
+}
+
+/* ---------- MODALS ---------- */
+.modal{
+  position:fixed;inset:0;background:rgba(0,0,0,0.6);
+  display:none;align-items:center;justify-content:center;
+  padding:20px;z-index:400
+}
+.modal:target{display:flex}
+
+.modal-card{
+  width:100%;max-width:480px;background:var(--card);
+  border-radius:12px;box-shadow:var(--shadow);overflow:hidden
+}
+.modal-head{display:flex;gap:12px;padding:14px;background:#f6fbf9}
+.modal-head img{width:120px;height:90px;border-radius:10px;object-fit:cover}
+.modal-body{padding:14px}
+.modal-body .price{font-weight:800;color:var(--forest)}
+.modal-actions{
+  display:flex;justify-content:flex-end;gap:8px;
+  padding:10px;background:#f6faf6
+}
+.modal-close{
+  padding:8px 12px;background:#ddd;border-radius:10px;text-decoration:none;color:var(--forest)
+}

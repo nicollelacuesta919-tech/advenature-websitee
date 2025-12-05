@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Advenature — Adventure Meets Nature</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="Green yellow minimalist mountain nature logo (1).png" class="logo">
+        <div>
+          <h1 class="brand-title">Advenature</h1>
+          <p class="brand-sub">Where Adventure Meets Nature — Bukidnon</p>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#adventures">Adventures</a></li>
+          <li><a href="#nature">Nature</a></li>
+          <li><a href="#food">Food</a></li>
+          <li><a href="#map">Map</a></li>
+          <li><a href="#plan">Plan Visit</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2>Discover Bukidnon — thrills, views, and food you'll love.</h2>
+        <p>Advenature brings curated adventures, scenic nature spots, and local flavors — all in one guide.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#adventures">See Adventures</a>
+          <a class="btn btn-ghost" href="#plan">Plan Your Visit</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <div class="card-head">Quick Picks</div>
+        <ul>
+          <li>Zipline · Dropzone · Coaster</li>
+          <li>Pine Forests · Waterfalls · Lakes</li>
+          <li>Local Food · Souvenirs · Tours</li>
+        </ul>
+        <a class="btn btn-small" href="#adventures">Browse All</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Adventures -->
+  <section id="adventures" class="panel container">
+    <h3 class="section-title">Adventures</h3>
+    <p class="section-sub">Click any activity to see full details.</p>
+
+    <div class="cards">
+      <article class="card">
+        <a class="tile" href="#modal-zipline">
+          <img class="thumb" src="zipline.png" alt="">
+          <h4>Zipline — 840m</h4>
+          <div class="meta muted">Click for details</div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a class="tile" href="#modal-dropzone">
+          <img class="thumb" src="dropzone.png" alt="">
+          <h4>Dropzone</h4>
+          <div class="meta muted">Click for details</div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a class="tile" href="#modal-ropes">
+          <img class="thumb" src="rope.png" alt="">
+          <h4>Ropes Course</h4>
+          <div class="meta muted">Click for details</div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a class="tile" href="#modal-atv">
+          <img class="thumb" src="atv.png" alt="">
+          <h4>ATV Trails</h4>
+          <div class="meta muted">Click for details</div>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Nature -->
+  <section id="nature" class="panel alt">
+    <div class="container">
+      <h3 class="section-title">Nature</h3>
+      <p class="section-sub">Bukidnon's natural highlights — perfect for photographers and peace-seekers.</p>
+
+      <div class="gallery">
+        <a class="gallery-item" href="#modal-pine">
+          <img src="pineforrest.png">
+          <span>Pine Forests</span>
+        </a>
+
+        <a class="gallery-item" href="#modal-falls">
+          <img src="falls.jpg">
+          <span>Waterfalls</span>
+        </a>
+
+        <a class="gallery-item" href="#modal-lake">
+          <img src="lake.png">
+          <span>Lakes</span>
+        </a>
+
+        <a class="gallery-item" href="#modal-sunset">
+          <img src="sunsets.png">
+          <span>Sunsets</span>
+        </a>
+
+        <a class="gallery-item" href="#modal-view">
+          <img src="view.png">
+          <span>Scenic Views</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food -->
+  <section id="food" class="panel container">
+    <h3 class="section-title">Food & Dining</h3>
+    <p class="section-sub">Taste local Bukidnon flavors and comfort food.</p>
+
+    <div class="food-grid">
+      <a class="food-card" href="#modal-coffee">
+        <img src="anotnio.png">
+        <div>
+          <h4>Local Coffee</h4>
+          <p>Fresh brews from Bukidnon beans.</p>
+        </div>
+      </a>
+
+      <a class="food-card" href="#modal-diner">
+        <img src="diner.png">
+        <div>
+          <h4>Jessie's Diner</h4>
+          <p>Retro comfort food.</p>
+        </div>
+      </a>
+
+      <a class="food-card" href="#modal-cafe">
+        <img src="pastries.jpg">
+        <div>
+          <h4>Cafe Salzburg</h4>
+          <p>Local pastries & sweets.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- MAP SECTION -->
+  <section id="map" class="panel alt">
+    <div class="container">
+      <h3 class="section-title">Find Us on the Map</h3>
+      <p class="section-sub">Locate Dahilayan Adventure Park in Bukidnon.</p>
+
+      <div class="map-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63181.78207397085!2d124.80763249085251!3d8.216692645941228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ff9f2e91a8d50f%3A0xf9122891883f55bf!2sDahilayan%2C%20Manolo%20Fortich%2C%20Bukidnon!5e0!3m2!1sen!2sph!4v1764782372557!5m2!1sen!2sph" width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plan Visit -->
+  <section id="plan" class="panel container">
+    <h3 class="section-title">Plan Your Visit</h3>
+    <p class="section-sub">Prepare for your adventure.</p>
+
+    <div class="plan-grid">
+      <div class="plan-card">
+        <h4>What to bring</h4>
+        <ul>
+          <li>Comfortable shoes</li>
+          <li>Water bottle</li>
+          <li>Sunscreen & insect repellent</li>
+          <li>Light jacket (nights are cool)</li>
+        </ul>
+      </div>
+
+      <div class="plan-card">
+        <h4>Safety tips</h4>
+        <ul>
+          <li>Follow guides' instructions</li>
+          <li>Check weather</li>
+          <li>Book reputable operators</li>
+        </ul>
+      </div>
+
+      <div class="plan-card">
+        <h4>Sample routes</h4>
+        <p>Short drives connect most attractions; allow a full day for mixed itineraries.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="panel container">
+    <h3 class="section-title">Contact & Bookings</h3>
+    <p class="section-sub">Questions, group rates, or school trips — get in touch. We’re happy to assist you.</p>
+
+    <div class="contact-grid">
+      <div>
+        <p><strong>Email:</strong> advenature@gmail.com</p>
+        <p><strong>Phone:</strong> +63 900 000 0000</p>
+        <p><strong>Location:</strong> Dahilayan, Bukidnon</p>
+      </div>
+
+      <form class="contact-form">
+        <label>Name <input type="text"></label>
+        <label>Email <input type="email"></label>
+        <label>Message <textarea rows="3"></textarea></label>
+        <button class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 Advenature · Built for Bukidnon</p>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#top" class="back-to-top">↑</a>
+
+  <!-- ---------- MODALS ---------- -->
+  <!-- Zipline -->
+  <div id="modal-zipline" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <img src="zipline.png">
+        <div>
+          <h3>Zipline — 840m</h3>
+          <p class="muted">Panoramic forest views.</p>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <p class="price">₱500</p>
+        <p>Dahilayan Adventure Park boasts of two 840 meter ziplines with a drop of 100 meters. Zipriders are transported via 4WD Safari Cruiser to a launch tower at 4500′ ASL. Zoom through the rainforest canopy at 60-80kph to land at our Carrier-type flight deck using a special arresting gear system.</p>
+        <p>Weight: MIN. 40kg > MAX. 75kg</p>
+        <p>Height: Above 4ft</p>
+    </div>
+
+      <div class="modal-actions">
+        <a href="#adventures" class="modal-close">Close</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dropzone -->
+  <div id="modal-dropzone" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <img src="dropzone.png">
+        <div>
+          <h3>Dropzone</h3>
+          <p class="muted">Adrenaline free-fall swing.</p>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <p class="price">₱500–₱750</p>
+        <p class="price">Single Rider: P500</p> 
+        <p class="price">Tandem/Pair: P750</p>
+        <p>Dahilayan features a 120 ft Freefall into a manmade lake. Swoop to within feet of the water surface making it an adrenaline pumping Screamer of a ride. This is the Philippine’s first extreme pendulum swing of its kind.</p>
+      </div>
+
+      <div class="modal-actions">
+        <a href="#adventures" class="modal-close">Close</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ropes -->
+  <div id="modal-ropes" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <img src="rope.png">
+        <div>
+          <h3>Ropes Course</h3>
+          <p class="muted">Fun obstacle challenges.</p>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <p class="price">KID'S BELOW 4FT - P150 (1st Level Only)</p>
+        <p class="price">ADULT - P300 (All Levels)</p>
+        <p>Build your confidence level and learn teamwork at our Tower of Power Ropes Course, a 12-stage High and Low Wire obstacle course complete with a Multisided Rockwall!</p>
+      </div>
+
+      <div class="modal-actions">
+        <a href="#adventures" class="modal-close">Close</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATV -->
+  <div id="modal-atv" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <img src="atv.png">
+        <div>
+          <h3>ATV Trails</h3>
+          <p class="muted">Off-road guided trails.</p>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <p class="price">ATV: ₱850.00 per head</p>
+        <p class="price">Buggy: ₱1,400.00 (2 Riders)</p>
+        <p>Get on an ATV(all-terrain vehicle) or Buggy (for two) as our guide takes you on an amazing ride along our 3.2 km forest trail of rough terrain, steep hills, scenic views and cool weather..</p>
+        <p>For Buggy: 140kg combined (Driver & Passenger)</p>
+        <p>No weight limit for ATV</p>
+      </div>
+
+      <div class="modal-actions">
+        <a href="#adventures" class="modal-close">Close</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Food modals -->
+  <div id="modal-coffee" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <img src="anotnio.png">
+        <div>
+          <h3>Local Coffee</h3>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <p class="price">₱60–₱150</p>
+        <p>Fresh local brews.</p>
+      </div>
+
+      <div class="modal-actions">
+        <a href="#food" class="modal-close">Close</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-diner" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <img src="diner.png">
+        <div>
+          <h3>Jessie's Diner</h3>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <p class="price">Starts ₱120</p>
+        <p>Burgers, wings, milkshakes & more.</p>
+      </div>
+
+      <div class="modal-actions">
+        <a href="#food" class="modal-close">Close</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-cafe" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <img src="pastries.jpg">
+        <div>
+          <h3>Cafe Salzburg</h3>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <p class="price">₱40–₱180</p>
+        <p>Fresh pastries & sweets.</p>
+      </div>
+
+      <div class="modal-actions">
+        <a href="#food" class="modal-close">Close</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
